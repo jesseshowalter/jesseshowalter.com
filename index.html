@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Jesse Showalter UI/UX</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<!-- 1140px Grid styles for IE -->
+	<!--[if lte IE 9]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" /><![endif]-->
+	
+	<!-- Your styles -->
+	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700|Bitter:400,400italic,700' rel='stylesheet' type='text/css'>
+
+	<!--css3-mediaqueries-js - http://code.google.com/p/css3-mediaqueries-js/ - Enables media queries in some unsupported browsers-->
+	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+</head>
+
+<body>
+<!-- A Preload Script -->
+<div class="hidden">
+	<script type="text/javascript">
+		<!--//--><![CDATA[//><!--
+			var images = new Array()
+			function preload() {
+				for (i = 0; i < preload.arguments.length; i++) {
+					images[i] = new Image()
+					images[i].src = preload.arguments[i]
+				}
+			}
+			preload(
+				"css/img/headerAbout.jpg",
+				"css/img/headerBlog.jpg",
+				"css/img/headerContact.jpg",
+				"css/img/headerHome.jpg",
+				"css/img/headerSearch.jpg",
+				"css/img/headerWork.jpg"
+			)
+		//--><!]]>
+	</script>
+</div>
+<!-- End Preload Script -->
+<div class="container container_blue headerHome">
+	<div class="row">
+		<div class="twelvecol">
+			<nav>
+				<a class="brand" href="index.html"><h1>Jesse Showalter</h1></a>
+				<span>Jesse Showalter - EST.1984</span>
+				<ul>
+					<li><a href="about.html">About</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="#go" class="show_hide"></a></li>
+				</ul>
+			</nav>
+			<div class="slidingDiv">
+				<input type="text" placeholder"Search">
+				<input type="button" value="Search">
+			</div>
+			<!-- <h2>I'm a UI/UX Designer &amp; Front-End Developer <a href="#work">working</a> in Honolulu. I  solve problems with <a href="">design</a>, &amp; <a href="">code</a> for tomorrow's web.</h2> -->
+			<h2>My name is Jesse, I'm a <a href="">Design-gineer</a>, specializing in UI/UX Design and Front-End Development. I'm always looking for projects so don't be afraid to <a href="contact.html"> contact me</a></h2>
+			<div id="load-area"></div>
+		</div>
+	</div>
+</div>
+
+<div class="row wrapper projects">
+	<div class="twelvecol">
+		<section id="pattern" class="pattern">
+			<ul class="grid">
+				<li>
+					<a href="hawaiian.html">
+						<div>
+							<img src="projects/hawaiian/logo.png" alt="Hawaiian Airlines Interface">
+							<h2>Hawaiian Airlines</h2>
+							<h3>Design &amp; Development</h3>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="jimmygirl.html">
+						<div>
+							<img src="projects/jimmygirl/logo.png" alt="">
+							<h2>Jimmy Girl</h2>
+							<h3>Identity, Design, Development</h3>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="sasquatch.html">
+						<div class="omega">
+							<img src="projects/sasquatch/logo.png" alt="Sasquatch Shades E-Commerce">
+							<h2>Sasquatch Shades</h2>
+							<h3>Design &amp; Development</h3>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="totalliferecovery.html">
+						<div>
+							<img src="projects/totalliferecovery/logo.png" alt="">
+							<h2>Total Life Recovery</h2>
+							<h3>Design and Identity</h3>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="hawaiitheatre.html">
+						<div>
+							<img src="projects/hawaiitheatre/logo.png" alt="Hawaii Theatre Website">
+							<h2>Hawaii Theatre</h2>
+							<h3>Interface Design</h3>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="amyjean.html">
+						<div class="omega">
+							<img src="projects/amyjean/logo.png" alt="Amy Jean Photography">
+							<h2>Amy Jean</h2>
+							<h3>Identity, Design, Development</h3>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="augustine.html">
+						<div>
+							<img src="projects/augustine/logo.png" alt="">
+							<h2>Augustine Foundation</h2>
+							<h3>Development</h3>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="memorate.html">
+						<div>
+							<img src="projects/memorate/logo.png" alt="">
+							<h2>Memorate.com</h2>
+							<h3>UI/UX</h3>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="downbeat.html">
+						<div class="omega">
+							<img src="projects/downbeat/logo.png" alt="">
+							<h2>Downbeat Diner</h2>
+							<h3>Interface Design</h3>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</section>
+	</div>
+</div>
+<footer class="container container_blue">
+	<div class="row">
+		<div class="fivecol twitter">
+			<h3>The Twittersphere</h3>
+			<div class="tweet"></div>
+			<a href="#">@jesseatomic</a>
+		</div>
+		<a href="#">
+		<div class="twocol backToTop">
+			back to top
+		</div>
+		</a>
+		<div class="fivecol blogRoll last">
+			<h3>The Rise of HTML5</h3>
+			<p>The introduction of HTML5 started long ago with the incorporation of semantics from the W3C. The web community was in the dark ages...</p>
+			<a href="#">Read this Article</a>
+		</div>
+	</div>
+</footer>
+	<script src="js/jquery-1.8.2.min.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="js/jquery.tweet.js"></script>
+</body>
+</html>
