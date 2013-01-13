@@ -1073,7 +1073,7 @@ Back to top button
 /* ============================= */
 /* ! Layout for small devices    */
 /* ============================= */
-@media handheld, only screen and (max-width: 550px) {
+@media handheld, only screen and (max-width: 580px) {
   nav span {
     display: none; } }
 @media handheld, only screen and (max-width: 500px) {
