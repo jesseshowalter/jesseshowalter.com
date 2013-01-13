@@ -756,11 +756,11 @@ Back to top button
 */
 #back-top {
 	position: fixed;
-	bottom: 85%;
-	right: 5px;
+	bottom: 0;
+	right: 0;
 }
 #back-top a {
-	width: 108px;
+	width: 40px;
 	display: block;
 	text-align: center;
 	font: 11px/100% Arial, Helvetica, sans-serif;
@@ -777,15 +777,15 @@ Back to top button
 }
 /* arrow icon (span tag) */
 #back-top span {
-	width: 90px;
-	height: 90px;
+	width: 40px;
+	height: 40px;
 	display: block;
-	margin-bottom: 7px;
-	background: rgba(221, 221, 221, 0.6) url(img/up-arrow.png) no-repeat center center;
+	margin-bottom: 0px;
+	background:#E2CB6D /*rgba(221, 221, 221, 0.6)*/ url(img/up-arrow2.png) no-repeat center center;
 	/* rounded corners */
-	-webkit-border-radius: 15px;
-	-moz-border-radius: 15px;
-	border-radius: 15px;
+	//-webkit-border-radius: 15px;
+	//-moz-border-radius: 15px;
+	//border-radius: 15px;
 	/* background color transition */
 	-webkit-transition: 0.6s;
 	-moz-transition: 0.6s;
@@ -821,9 +821,7 @@ Back to top button
 		
 	}
 
-	#back-top {
-		bottom: 75%;
-	}
+	
 	ul.tech{
 	padding-bottom:150px !important;
 }
@@ -887,9 +885,7 @@ Back to top button
 
 @media handheld, only screen and (max-width: 550px) {
 	nav span{display:none;}
-	#back-top {
-		bottom: 68%;
-	}
+	
 }
 
 @media handheld, only screen and (max-width: 500px) {
