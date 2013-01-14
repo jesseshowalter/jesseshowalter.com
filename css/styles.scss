@@ -11,6 +11,8 @@
 @import "ie";
 @import "1140";
 @import "flexslider";
+@import "code";
+
 
 /* Color Variables*/
 $goldyLocks:#E2CB6D;
@@ -529,7 +531,7 @@ li.tool{
 	background:$baseBlue url("img/headerBlog.jpg") no-repeat center;
 	background-size: cover ;
 	color:#FFF;
-	min-height: 470px;
+	min-height: 450px;
 }
 
 .blogMeta{
@@ -595,6 +597,41 @@ li.tool{
 	}
 }
 
+.blogPost{
+	text-align:center;
+	h2{
+		font-size: 4em;
+		font-family: $bitter;
+		text-transform: none;
+		margin:0.5em 0 0;
+		color:#272727;
+	}
+	h3{
+		@include dark-serif;
+		font-size: 1.4em;
+		span{
+			font-family: $bitter;
+			color:#666666;
+			text-transform: capitalize;
+			font-style: italic;
+			font-size: .7em;
+		}
+	}
+	time{
+
+	}
+	article{
+		width:75%;
+		margin:2em auto 0;
+		text-align: justify;
+		strong{
+			color:$goldyLocks;
+			font-size: 3.7em;
+			float:left;
+			margin:18px 12px 0 0;
+		}
+	}
+}
 
 
 
@@ -604,7 +641,7 @@ li.tool{
 	background:$baseBlue url("img/headerContact.jpg") no-repeat center;
 	background-size: cover ;
 	color:#FFF;
-	min-height: 470px;
+	min-height: 450px;
 }
 
 
@@ -651,7 +688,7 @@ li.tool{
 	background:$baseBlue url("img/headerWork.jpg") no-repeat center;
 	background-size: cover ;
 	color:#FFF;
-	min-height: 470px;
+	min-height: 450px;
 } 
 .project{
 	.row{
@@ -825,6 +862,7 @@ Back to top button
 	background-color: rgba(0, 0, 0, 0.5);
 }
 
+
 	
 /* ============================= */
 /* ! Layout for Mid Screens   */
@@ -849,6 +887,10 @@ Back to top button
 
 	body {
 		
+	}
+
+	.blogPost article{
+		text-align:left;
 	}
 
 	
@@ -905,6 +947,7 @@ Back to top button
 	.slidingDiv {
 		margin:-4px 4px 0 0;
 	}
+
 }
 
 
@@ -938,14 +981,29 @@ Back to top button
 			width:28px;
 			padding:0;
 		}
-	}	
-
-	.container_blue h2{
-		font-size: 1.8em;
-		line-height:1.3em;
-		padding:20px 0;
 	}
 
+	.blogPost h2{
+		font-size: 2.6em;
+	}	
+
+	.container_blue{
+		min-height: 400px;
+		h2{
+		font-size: 1.8em;
+		line-height:1.3em;
+		padding:45px 0 0;
+		}	
+	}
+
+	.container_blue.headerAbout {
+		min-height: 470px;
+	}
+	.container_blue.headerWork {
+		min-height: 400px;
+	}
+
+	.headerHome h2 span{display:none;}
 
 
 }

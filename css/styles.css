@@ -341,6 +341,63 @@ html[xmlns] .slides {
   .flex-direction-nav .flex-next {
     opacity: 1;
     right: 0; } }
+section.codeExample {
+  margin: 2em 0; }
+  section.codeExample h3 {
+    background: #E2CB6D;
+    color: #FFF;
+    padding: 10px;
+    text-shadow: -1px -1px 0 #c1ad5c; }
+
+pre {
+  line-height: 1.4;
+  overflow: auto;
+  background: #151E25;
+  padding: 0 2em; }
+
+code {
+  font-size: 1em; }
+
+h1 span {
+  font-size: 0.5em; }
+
+a {
+  color: gray; }
+
+.css .comment {
+  color: #283845; }
+
+.css .classes {
+  color: red; }
+
+.css .properties {
+  color: #366a93; }
+
+.css .selectors {
+  color: #E2CB6D; }
+
+.css .units {
+  color: #ff8080; }
+
+.css .urls {
+  color: #80ffbf; }
+
+.html .tag {
+  color: purple; }
+
+.html .attribute {
+  color: red; }
+
+.html .comment {
+  color: gray;
+  font-style: italic; }
+
+.html .string {
+  color: navy; }
+
+.html .doctype {
+  color: teal; }
+
 /* Color Variables*/
 /* Font Variables */
 ::selection {
@@ -788,7 +845,7 @@ li.tool {
   background: #151e25 url("img/headerBlog.jpg") no-repeat center;
   background-size: cover;
   color: #FFF;
-  min-height: 470px; }
+  min-height: 450px; }
 
 .blogMeta time {
   float: left;
@@ -857,12 +914,43 @@ li.tool {
   .blogContainer img {
     margin: 0 auto; }
 
+.blogPost {
+  text-align: center; }
+  .blogPost h2 {
+    font-size: 4em;
+    font-family: "Bitter", serif;
+    text-transform: none;
+    margin: 0.5em 0 0;
+    color: #272727; }
+  .blogPost h3 {
+    color: #272727;
+    font-size: 1em;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1.4em; }
+    .blogPost h3 span {
+      font-family: "Bitter", serif;
+      color: #666666;
+      text-transform: capitalize;
+      font-style: italic;
+      font-size: .7em; }
+  .blogPost article {
+    width: 75%;
+    margin: 2em auto 0;
+    text-align: justify; }
+    .blogPost article strong {
+      color: #e2cb6d;
+      font-size: 3.7em;
+      float: left;
+      margin: 18px 12px 0 0; }
+
 /* Contact Page Styles */
 .headerContact {
   background: #151e25 url("img/headerContact.jpg") no-repeat center;
   background-size: cover;
   color: #FFF;
-  min-height: 470px; }
+  min-height: 450px; }
 
 .slidingDiv {
   height: 36px;
@@ -900,7 +988,7 @@ li.tool {
   background: #151e25 url("img/headerWork.jpg") no-repeat center;
   background-size: cover;
   color: #FFF;
-  min-height: 470px; }
+  min-height: 450px; }
 
 .project .row {
   border-bottom: 1px dashed #aaaaaa;
@@ -1051,6 +1139,9 @@ Back to top button
 /* ! Layout for Tablets   */
 /* ============================= */
 @media handheld, only screen and (max-width: 767px) {
+  .blogPost article {
+    text-align: left; }
+
   ul.tech {
     padding-bottom: 150px !important; }
 
@@ -1110,10 +1201,24 @@ Back to top button
     width: 28px;
     padding: 0; }
 
-  .container_blue h2 {
-    font-size: 1.8em;
-    line-height: 1.3em;
-    padding: 20px 0; } }
+  .blogPost h2 {
+    font-size: 2.6em; }
+
+  .container_blue {
+    min-height: 400px; }
+    .container_blue h2 {
+      font-size: 1.8em;
+      line-height: 1.3em;
+      padding: 45px 0 0; }
+
+  .container_blue.headerAbout {
+    min-height: 470px; }
+
+  .container_blue.headerWork {
+    min-height: 400px; }
+
+  .headerHome h2 span {
+    display: none; } }
 /* ========================================== */
 /* ! Provide higher res assets for iPhone 4   */
 /* ========================================== */
