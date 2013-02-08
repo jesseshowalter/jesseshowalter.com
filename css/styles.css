@@ -945,6 +945,40 @@ li.tool {
       float: left;
       margin: 18px 12px 0 0; }
 
+.newBlogPost {
+  text-align: center; }
+  .newBlogPost h2 {
+    font-size: 3em;
+    font-family: "Bitter", serif;
+    text-transform: none;
+    margin: 0;
+    color: #272727; }
+  .newBlogPost h3 {
+    color: #272727;
+    font-size: 1em;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1.6em; }
+    .newBlogPost h3 span {
+      font-family: "Bitter", serif;
+      color: #666666;
+      text-transform: capitalize;
+      font-style: italic;
+      font-size: .7em; }
+  .newBlogPost img {
+    margin: 30px 0 10px 0; }
+  .newBlogPost article {
+    width: 75%;
+    margin: 2em auto 0;
+    text-align: justify;
+    border-bottom: 1px solid #d9d9d9; }
+    .newBlogPost article strong {
+      color: #e2cb6d;
+      font-size: 3.7em;
+      float: left;
+      margin: 18px 12px 0 0; }
+
 /* Contact Page Styles */
 .headerContact {
   background: #151e25 url("img/headerContact.jpg") no-repeat center;
@@ -1191,6 +1225,9 @@ Back to top button
   nav span {
     display: none; } }
 @media handheld, only screen and (max-width: 500px) {
+  .newBlogPost h2 {
+    font-size: 1.8em; }
+
   nav a:link, nav a:hover, nav a:visited, nav a:active {
     font-size: .9em;
     padding: 5px; }
@@ -1251,4 +1288,7 @@ Back to top button
   color: #e2cb6d; }
 
 .tweet_list .tweet_avatar {
+  display: none; }
+
+div#preload {
   display: none; }
