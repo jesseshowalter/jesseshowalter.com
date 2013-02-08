@@ -1,3 +1,12 @@
+//@codekit-prepend "jquery-1.8.2.min.js"
+//@codekit-prepend "jquery.flexslider".js"
+//@codekit-prepend "jquery.tweet".js"
+//@codekit-prepend "css-mediaqueries".js"
+//@codekit-prepend "code_highlighter".js"
+//@codekit-prepend "html.js"
+//@codekit-prepend "javascript.js"
+//@codekit-prepend "css.js"
+
 $(document).ready(function(){
         $(".slidingDiv").hide();
         $(".show_hide").show();
@@ -6,6 +15,7 @@ $(document).ready(function(){
     $(".slidingDiv").slideToggle();
     });
 });
+
 
 jQuery(function($){
         $(".tweet").tweet({
