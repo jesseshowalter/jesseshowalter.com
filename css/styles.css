@@ -936,7 +936,7 @@ li.tool {
       font-style: italic;
       font-size: .7em; }
   .blogPost article {
-    width: 75%;
+    width: 80%;
     margin: 2em auto 0;
     text-align: justify; }
     .blogPost article strong {
@@ -969,7 +969,7 @@ li.tool {
   .newBlogPost img {
     margin: 30px 0 10px 0; }
   .newBlogPost article {
-    width: 75%;
+    width: 80%;
     margin: 2em auto 0;
     text-align: justify;
     border-bottom: 1px solid #d9d9d9; }
