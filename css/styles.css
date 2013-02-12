@@ -474,19 +474,6 @@ nav {
     color: #e2cb6d; }
   nav a:active {
     color: #272727; }
-  nav li:last-child a {
-    text-indent: -9999px;
-    background: url("img/mag.gif") no-repeat center;
-    width: 22px;
-    height: 22px;
-    padding: 20px;
-    border-left: 1px solid #a5a5a5;
-    background-size: 1em;
-    -webkit-transition: all 0.1s ease-in-out;
-    -mox-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out; }
-    nav li:last-child a:hover {
-      background-size: 1.2em; }
   nav a.brand {
     text-indent: -9999px;
     padding: 0;
@@ -938,7 +925,7 @@ li.tool {
   .blogPost article {
     width: 80%;
     margin: 2em auto 0;
-    text-align: justify; }
+    text-align: left; }
     .blogPost article strong {
       color: #e2cb6d;
       font-size: 3.7em;
@@ -952,7 +939,12 @@ li.tool {
     font-family: "Bitter", serif;
     text-transform: none;
     margin: 0;
-    color: #272727; }
+    color: #272727;
+    -webkit-transition: all 0.1s ease-in-out;
+    -mox-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out; }
+    .newBlogPost h2:hover {
+      color: #e2cb6d; }
   .newBlogPost h3 {
     color: #272727;
     font-size: 1em;
@@ -971,7 +963,7 @@ li.tool {
   .newBlogPost article {
     width: 80%;
     margin: 2em auto 0;
-    text-align: justify;
+    text-align: left;
     border-bottom: 1px solid #d9d9d9; }
     .newBlogPost article strong {
       color: #e2cb6d;
@@ -1173,8 +1165,8 @@ Back to top button
 /* ! Layout for Tablets   */
 /* ============================= */
 @media handheld, only screen and (max-width: 767px) {
-  .blogPost article {
-    text-align: left; }
+  .blogPost article, .newBlogPost article {
+    text-align: left !important; }
 
   ul.tech {
     padding-bottom: 150px !important; }

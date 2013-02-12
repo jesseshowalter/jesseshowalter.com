@@ -124,19 +124,7 @@ nav{
 		a:hover{ color:$goldyLocks;}
 		a:active{ color:#272727; }
 
-			li:last-child a{
-			text-indent: -9999px;
-			background:url("img/mag.gif") no-repeat center;
-			width:22px;
-			height:22px;
-			padding:20px;
-			border-left:1px solid #A5A5A5;
-			background-size:1em;
-			@include oneSec;
-			&:hover{
-				background-size:1.2em;
-			}
-		}
+
 
 	a.brand{
 		text-indent: -9999px;
@@ -623,7 +611,7 @@ li.tool{
 	article{
 		width:80%;
 		margin:2em auto 0;
-		text-align: justify;
+		text-align: left;
 		strong{
 			color:$goldyLocks;
 			font-size: 3.7em;
@@ -641,6 +629,10 @@ li.tool{
 		text-transform: none;
 		margin:0;
 		color:#272727;
+		@include oneSec;
+		&:hover{
+				color:$goldyLocks;
+			}
 	}
 	h3{
 		@include dark-serif;
@@ -662,7 +654,7 @@ li.tool{
 	article{
 		width:80%;
 		margin:2em auto 0;
-		text-align: justify;
+		text-align: left;
 		border-bottom:1px solid $quickSilver;
 		strong{
 			color:$goldyLocks;
@@ -929,8 +921,8 @@ Back to top button
 		
 	}
 
-	.blogPost article{
-		text-align:left;
+	.blogPost article, .newBlogPost article{
+		text-align:left !important;
 	}
 
 	
@@ -1009,6 +1001,8 @@ Back to top button
 		h2{
 			font-size:1.8em;
 		}
+
+
 	}
 
 	nav{
