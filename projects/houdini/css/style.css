@@ -1,0 +1,755 @@
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+/* ----       Code by Jesse Showalter        --- */
+/* --- http://www.jesseshowalterdesign.com   --- */
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+
+/* Fonts to be used 
+font-family: 'Arvo', serif;
+font-family: 'Vast Shadow', cursive;
+*/
+
+/* Color Pallet
+E5AE26 - Gold
+1D1D1D - Off Black
+F5F2EB - Tope
+
+*/
+/* Utility Styles ------------------------------------------------------------ */
+
+::selection 				{ background: #E5B42F; color: white; } /* Safari */ 
+::-moz-selection 			{ background: #E5B42F;  color: white; } /* Firefox */
+
+.group:after {
+	visibility: hidden;
+	display: block;
+	content: ".";
+	clear: both;
+	height: 0;
+	}
+* html .group             { zoom: 1; } /* IE6 */
+*:first-child+html .group { zoom: 1; } /* IE7 */
+
+
+
+/* Basic Styles ------------------------------------------------------------ */
+body{
+	background-color:#FBF7F4;
+	background-image: url('../images/city.jpg'), url('../images/punch.jpg'), url('../images/fiber.jpg');
+	background-repeat:no-repeat, no-repeat, repeat;
+	background-position: center left, bottom right, center;
+	color:#333;
+	font-size:100%;
+}
+
+a, p, ul, ol, td, th, label, input{
+	font-family: 'arvo', serif;
+	line-height:1.4em;
+}
+
+p{
+	margin:10px 0;
+}
+
+ol li{
+	background:url('../images/lock.gif') no-repeat left;
+	padding-left:15px;
+	line-height:2em;
+
+}
+
+em{
+	font-family: 'arvo', serif;
+	line-height:1.4em;
+}
+
+h1, h2, h3, h4, h5, h6{
+	color:#000;
+
+}
+
+h1{
+	float:left;
+	background:url('../images/logo.png') no-repeat;
+	width:290px; /* Logo maintains consistant size */
+	height:139px; /* Logo maintains consistant size */
+	text-indent:-9999px;
+	margin-top:-70px;
+	-moz-transition:all 0.3s ease;
+	-webkit-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+}
+
+h1:hover{
+	margin-top:-50px; /* Specific animation action*/
+	-moz-transform:rotate(-4deg);
+	-webkit-transform:rotate(-4deg);
+	-o-transform:rotate(-4deg);
+	transform:rotate(-4deg);
+}
+
+h2{
+	font-size:3.2em;
+	font-family: 'Vast Shadow', cursive;
+	text-shadow:1px 0px 1px #FFF;
+	margin:0 0 5px 0;
+	line-height:1.1em;
+	/* -moz-transform: rotate(-3deg); */
+}
+
+h3{
+	font-size:2.2em;
+	font-family: 'Vast Shadow', cursive;
+	margin-bottom:20px;
+	text-shadow:1px 0px 1px #FFF;
+}
+
+h4{
+	font-size:1.4em;
+	font-family: 'Arvo', cursive;
+	margin:15px 0;
+	text-shadow:1px 0px 1px #FFF;
+	/* font-weight:600; */
+	color:#333;
+	text-decoration: underline;
+}
+
+a:link{
+	color:#E5B42F;
+	text-decoration:none;
+}
+
+a:visited{
+	color:#E5B42F;
+}
+
+a:hover{
+	color:#E5B42F;
+}
+
+a:active{
+	color:#E5B42F;
+}
+
+strong, span{
+	background-color: rgba(229, 174, 38, 0.6);
+	padding:0 3px;
+	text-shadow:1px 1px 1px #FFF;
+	color:#000;	
+}
+
+em{
+	font-style: italic
+}
+
+.button{
+	padding:7px 30px;
+	color:#FFF !important;
+	background-color: #E5AE26;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+}
+
+/* Header / Navigation Styles ---------------------------------------------------- */
+header{
+	margin:0 auto;
+	padding:35px 0 40px 0;
+	background:#000;
+	background-color: #2ABFFF;
+	background-image: -o-linear-gradient(90deg , rgb(0,0,0) 0%, rgb(30,30,30) 100%);
+	background-image: -moz-linear-gradient(90deg , rgb(0,0,0) 0%, rgb(30,30,30) 100%);
+	background-image: -webkit-linear-gradient(90deg , rgb(0,0,0) 0%, rgb(30,30,30) 100%);
+	background-image: -ms-linear-gradient(90deg , rgb(0,0,0) 0%, rgb(30,30,30) 100%);
+	background-image: linear-gradient(90deg , rgb(0,0,0) 0%, rgb(30,30,30) 100%);
+}
+
+nav{
+	max-width:1024px;
+	width:100%;
+	margin:0 auto;
+}
+
+header nav ul {
+	float:right;
+}
+
+header nav ul li{
+	display:inline;
+}
+
+
+header nav ul li a:link{
+	display: inline;
+	font-family: 'Arvo', cursive;
+	padding:18px;
+	text-shadow:1px 1px 0px #000;
+	-moz-transition:all 0.3s ease;
+	-webkit-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+}
+
+header nav ul li a:hover{
+	/*background:#000; */
+	color:#FFF;
+	background:url('../images/key.png') no-repeat top center;
+}
+
+
+/* Main CTA Styles ------------------------------------------------------------ */
+#intro_container{
+	max-width:1024px;
+	height:auto; /*430px*/
+	margin:0 auto;
+	overflow: visible;
+	background:url('../images/cars.jpg') no-repeat left top;
+}
+
+#intro_container #portrait{
+	float:right;
+	width:53.02734375%; /* 543px */
+}
+
+#intro_container img{
+	float:right;
+	z-index:10;
+	width:100%;
+}
+
+#intro_container article{
+	width: 53.7109375; /* 550px*/
+	padding:50px 0 0 0 ;
+}
+
+#intro_container article blockquote{
+	width:40%;
+}
+blockquote p{
+	text-shadow:1px 1px 0px #FFF;
+	color:#000;
+	font-size: 1.4em;
+	line-height: 1.4em;
+	font-style:  italic;
+}
+
+blockquote em{
+	text-shadow:1px 1px 0px #FFF;
+}
+
+
+/* Main Content Styles --------------------------------------------------------- */
+#wrapper{
+	width:90%;
+	max-width:984px;
+	padding:20px 20px 50px 20px;
+	margin: -50px auto 0;
+	background:#FFF;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	box-shadow:0px 2px 10px #999;
+}
+
+#the_man, #the_myth, #the_legend{
+	margin-bottom:20px;
+	padding-bottom:25px;
+	border-bottom:1px dashed #CCC;
+}
+
+/* "The Man" Section Styles ----------------------------------------------------- */
+#the_man article{
+	-moz-column-count: 2;
+	-moz-column-gap: 30px;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 30px;
+	-o-column-count: 2;
+	-o-column-gap: 30px;
+	column-count: 2;
+	column-gap: 30px;
+}
+
+
+/* "The Myth" Section Styles ----------------------------------------------------- */
+#the_myth{
+	overflow:hidden;
+}
+
+.infamous{
+	width: 35%;
+	min-width:290px;
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+aside{
+	float:left;
+	overflow: visible;
+	margin:0 0 30px 0px;
+	width:65%;
+}
+
+aside li{
+	display:inline;
+}
+
+aside img{
+	width:140px; /* Specific width needed */
+	height:auto;
+	border:4px solid white;
+	box-shadow:0px 0px 4px #666;
+	margin:5px 0 10px 10px;
+	-moz-transition:all 0.4s ease;
+	-webkit-transition:all 0.4s ease;
+	-o-transition:all 0.4s ease;
+	float:left;
+}
+
+aside img:hover{
+	border:4px solid #E5AE26;
+	cursor:pointer;
+	-moz-transform:scale(1.4) rotate(360deg);
+	-webkit-transform:scale(1.4) rotate(360deg);
+	-o-transform:scale(1.4) rotate(360deg);
+	transform:scale(1.4) rotate(360deg);
+
+}
+
+
+
+/* "The Legend" Section Styles ----------------------------------------------------- */
+#the_legend{
+	border:;
+}
+
+#the_legend #portrait2{
+	float:left;
+	width:29.296875%; /* 300px */
+	margin:0 30px 5px 0;
+}
+
+#the_legend #portrait2 img{
+	z-index:10;
+	width:100%;
+	height:auto;
+	border:8px solid white;
+	box-shadow:0px 2px 10px #999;
+}
+
+#the_legend p{
+	margin:10px 0;
+}
+
+/* Footer Styles ----------------------------------------------------- */
+footer{
+	max-width:1024px;
+	margin:0 auto;
+	height:50px;
+	padding:10px;
+}
+
+footer p{
+	float:left;
+}
+
+
+
+footer .back_to_top{
+	padding:7px 30px;
+	color:#FFF;
+	background-color: #DCA623;
+	background-image: -o-linear-gradient(91deg , rgb(198,141,0) 0%, rgb(255,182,0) 100%);
+	background-image: -moz-linear-gradient(91deg , rgb(198,141,0) 0%, rgb(255,182,0) 100%);
+	background-image: -webkit-linear-gradient(91deg , rgb(198,141,0) 0%, rgb(255,182,0) 100%);
+	background-image: -ms-linear-gradient(91deg , rgb(198,141,0) 0%, rgb(255,182,0) 100%);
+	background-image: linear-gradient(91deg , rgb(198,141,0) 0%, rgb(255,182,0) 100%);
+	border-radius:10px;
+	float:right;
+	/* margin:-45px 435px 0 0; */
+	-moz-transition:all 0.4s ease;
+	-webkit-transition:all 0.4s ease;
+	-o-transition:all 0.4s ease;
+	transition:all 0.4s ease;
+}
+
+
+footer .back_to_top:hover{
+	background:#EFCE7D;
+	text-shadow:1px 1px 1px #E5AE26;
+	border-radius:20px;
+}
+
+/* Table & Form Styles ----------------------------------------------------- */
+
+#table_form{
+
+}
+
+#table_form h4{
+	margin-bottom:1.6em;
+}
+
+/* Table Styles ---- */
+
+#table_form section{
+	width:60%;
+	float: left;
+}
+
+#table_form section table{
+	background:#FFF;
+	border-collapse: collapse;
+	float:left;
+	margin:0 0.05em;
+	border:2px solid #E5B42F;
+	-moz-box-shadow: 1px 1px 4px #999;
+	-webkit-box-shadow: 1px 1px 4px #999;
+	box-shadow: 0px 3px 4px #999;
+}
+
+#table_form section td{
+	text-align:center;
+	border-top:1px solid #F1F1F1;
+	padding: 0.5em 1.6em;
+	color:#666;
+}
+
+#table_form section th{
+	text-align:center;
+	padding: 1em 1.8em;
+	color:#E5AE26;
+	background:url(../images/fiber.jpg);
+}
+
+#table_form section td.sell{
+	background:#F5F2EB;
+	padding:1.4em 0 !important;
+}
+
+
+#table_form table.best_deal{
+	-moz-transform:scale(1.08);
+	-webkit-transform:scale(1.08);
+	-o-transform:scale(1.08);
+	transform:scale(1.08);
+	border:2px solid #D24044;
+}
+
+#table_form table.best_deal th{
+	color:#D24044;
+}
+
+#table_form table.best_deal .button{
+	background:#D24044;
+}
+
+/* Form Styles ---- */
+	
+form{
+	width:38%;
+	float:right;
+}
+
+form div{
+	margin:0 0 1em 0;
+}
+
+form label{
+	display:block;
+}
+
+form input{
+	border:1px solid #CCC;
+	color:#E5AE26;
+	padding:0.4em;
+	width:40%;
+}
+
+form textarea{
+	border:1px solid #CCC;
+	color:#E5AE26;
+	padding:0.4em;
+	width:96%;
+}
+
+
+
+
+
+
+
+
+
+/* ============================================================
+					Media Queries 
+============================================================ */
+
+
+
+/*-----------------------------------------------------------------------------------------*/
+@media screen and (min-width:768px) and (max-width: 1036px) {
+
+	body{
+		background-color:#FBF7F4;
+		background:url('../images/fiber.jpg') repeat;
+	}
+
+
+	#intro_container article { 
+		padding-left:3%;
+	}
+
+	article blockquote p { 
+		display: none;
+	}
+	article blockquote em { 
+		visibility: hidden;
+	}
+
+	#table_form section{
+		width:38em;
+		float: none;
+		margin:0 auto;
+		margin-bottom:32em;
+	}
+
+	#table_form section h4{
+		text-align:center;
+	}
+
+	form{
+		width:100%;
+		float:none;
+		margin: 0 auto;
+	}
+
+
+}
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------*/
+@media screen and (min-width:480px) and (max-width: 767px) {
+
+	body{
+		background-color:#FBF7F4;
+		background:url('../images/fiber.jpg') repeat;
+	}
+
+	#wrapper{
+		margin-top:0;
+	}
+
+	#intro_container article { 
+		padding-left:3%;
+		padding-top:30px;
+	}
+
+	h2{
+		text-align: center;
+	}
+
+	article blockquote p { 
+		display: none;
+	}
+	article blockquote em { 
+		visibility: hidden;
+	}
+
+	#intro_container img{
+		display:none;
+	}
+
+	header{
+		height:110px;
+	}
+
+	h1{
+		float:none;
+		margin:-70px auto 35px auto;
+	}
+	h1:hover{
+		margin-top:-70px;
+		-moz-transform:rotate(0deg);
+		-webkit-transform:rotate(0deg);
+		-o-transform:rotate(0deg);
+		transform:rotate(0deg);
+	}
+
+	header nav ul {
+		float:none;
+		width:360px;
+		margin:0 auto;
+	}
+
+	#the_man article{
+		-moz-column-count:1;
+		-webkit-column-count:1;
+		-o-column-count:1;
+		column-count:1;
+	}
+
+	#table_form section{
+		display:none;
+	}
+
+
+	#table_form section h4{
+		text-align:center;
+	}
+
+	form{
+		width:100%;
+		float:none;
+		margin: 0 auto;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------*/
+@media screen and (max-width: 479px) {
+
+	body{
+		background-color:#FBF7F4;
+		background:url('../images/fiber.jpg') repeat;
+	}
+
+	h1, h2, h3, h4, h5, h6{
+		text-align:center;
+	}
+
+	#wrapper{
+		width:85%;
+		max-width:984px;
+		padding:20px;
+		margin:0 auto;
+		background:#FFF;
+		-moz-border-radius:0px;
+		-webkit-border-radius:0px;
+		border-radius:0px;
+		box-shadow:0px 2px 10px #999;
+	}
+
+	h1{
+		float:none;
+		margin:-70px auto 35px auto;
+	}
+	h1:hover{
+		margin-top:-70px;
+		-moz-transform:rotate(0deg);
+		-webkit-transform:rotate(0deg);
+		-o-transform:rotate(0deg);
+		transform:rotate(0deg);
+	}
+
+	header nav ul {
+		float:none;
+		width: 75.156576200418%;/* 360px*/
+		margin:0 auto;
+	}
+
+	header nav ul li{
+		padding:15px 0px;
+		width:80%;
+		margin:10px auto 0 auto;
+		text-align: center;
+		border:1px dashed #FFF;
+		border-radius:8px;
+		display: block;
+	}
+
+	header nav ul li a:hover{
+		/*background:#000; */
+		color:#FFF;
+		background:none;
+	}
+
+	#intro_container img{
+		display:none;
+	}
+
+	#intro_container article{
+		padding:0 ;
+		margin-left:0px;
+	}
+
+	h2{
+		font-size:1.8em;
+		font-family: 'Vast Shadow', cursive;
+		text-shadow:1px 0px 1px #FFF;
+		margin:0 auto;
+		line-height:1.1em;
+		text-align:center;
+		/* -moz-transform: rotate(-3deg); */
+	}
+
+	blockquote p{
+		display:none;
+	}
+
+	 blockquote em{
+		display:none;
+	}
+
+	#the_man article{
+		-moz-column-count:1;
+		-webkit-column-count:1;
+		-o-column-count:1;
+		column-count:1;
+	}
+
+	#intro_container{
+		height:auto;
+		padding:20px 0;
+	}
+
+	.infamous{
+		margin:0 auto;
+		float:none;
+	}
+
+	aside{
+		margin:0 auto;
+		float:none;
+	}
+
+	aside ul{
+		margin:0 auto;
+		float:none;
+	}
+
+
+	footer .back_to_top{
+		float:left;
+	}
+
+	#table_form section{
+		display:none;
+	}
+
+	#table_form section h4{
+		text-align:center;
+	}
+
+	form{
+		width:100%;
+		float:none;
+		margin: 0 auto;
+	}
+
+
+}
+

@@ -1,0 +1,69 @@
+My Top 5 Favorite Sublime Text Plugins
+
+
+-Package control
+http://wbond.net/sublime_packages/package_control
+
+This plugin is completly neccesary if you use Sublime Text 2. Pretty much every awesome package you want to use will recomend that you install through “Package Control” as a rule of thumb. It’s also handy for exploring packages through sublime text instead of google searching lame blog posts like mine.
+After it’s installation all you need to do is to type shift + cmd + P, type “install” and ENTER.
+
+
+
+
+-Emmet
+https://github.com/sergeche/emmet-sublime
+
+If you’ve never used this plugin your world is about to get rocked. You can create complex layout syntax but chaining together little shortcut codes. 
+
+Write this:
+ul#nav>li.item$*4>a{Item $}
+
+Get this:
+<ul id="nav">
+	<li class="item1"><a href="">Item 1</a></li>
+	<li class="item2"><a href="">Item 2</a></li>
+	<li class="item3"><a href="">Item 3</a></li>
+	<li class="item4"><a href="">Item 4</a></li>
+</ul>
+
+Read the documentation http://docs.emmet.io/ and watch the video and be prepared for tyour workflow to get cray cray! Also comment below and let me know the craziest chain you’ve ever put together in one string. winner gets bragging rights forever.
+
+
+
+
+-Sublime CodeIntel
+https://github.com/Kronuz/SublimeCodeIntel
+
+SublimeCodeIntel is a code intelligence plugin ported from Open Komodo Editor to Sublime Text 2. It shows autocomplete information with the available modules in real time as well as display information about the current function in the status bar. Sometimes your brain get’s scrambled and you forget whether it’s font-size or text-size
+
+
+-PlainTasks
+https://github.com/aziz/PlainTasks
+
+PlainTasks is a Sublime Text 2 plugin allowing you to create simple yet powerful todo lists inside of sublime text. It’s great for your workflow to be able to just jump over and check things off.
+
+It’s built of a few basic commands and abilities. Sections, Tasks & Seperators. Mark as done and Archive when complete. How much simpler could it get.
+
+If your rockin a Google drive, Dropbox or other shared folder system with your project then everyone can work of the same running list. Sorry “Remember The Milk”
+
+
+
+-QuickThemes
+https://github.com/chrislongo/QuickThemes
+
+This is a great little plugin that allows you to switch themes easily, without drilling down through the menu’s, because development should be fun and full of color.
+
+Info
+QuickThemes allows you to easily cycle through any combination of Sublime Text 2 preferences. The obvious use is for changing color schemes, themes, and fonts simultaneously, but any of the ST2 preferences are available.
+
+Usage
+Super+Alt+0: Cycle up
+Super+Alt+9: Cycle down
+
+Alternatively, you can switch themes via Super+Shift+P and fuzzy search, e.g. "Super+Shift+P qtn" for next theme, "Super+Shift+P qtp" for previous theme.
+
+
+-Sass
+https://github.com/nathos/sass-textmate-bundle
+
+This add-on adds syntax highlighting and tab/code completion for Sass and SCSS files. It features Zen Coding shortcuts for many CSS properties, making you look like some kind of stylesheet wizard to everyone around you. You've got to like that.

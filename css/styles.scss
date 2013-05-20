@@ -12,6 +12,7 @@
 @import "1140";
 @import "flexslider";
 @import "code";
+@import "prism";
 
 
 /* Color Variables*/
@@ -22,6 +23,8 @@ $quickSilver:#D9D9D9;
 /* Font Variables */
 $oswald:'Oswald', sans-serif;
 $bitter:'Bitter', serif;
+$muli:'Muli', sans-serif; 
+
 
 ::selection 	{ background: $goldyLocks; color: white; } /* Safari */ 
 ::-moz-selection { background: $goldyLocks;  color: white; } /* Firefox */
@@ -164,7 +167,9 @@ nav{
 	background:#FFF;
 	margin-bottom:-80px;
 	position: relative;
+	z-index:1;
 }
+/*
 .wrapper:before{
 	content:"";
 	height:91.5%;
@@ -173,12 +178,17 @@ nav{
 	position:absolute;
 	left:99.5%
 }
+*/
 
 .headerHome{
 	background:$baseBlue url("img/headerHome.jpg") no-repeat center;
 	background-size: cover ;
 	color:#FFF;
 	min-height: 300px;
+
+	h2 span{
+
+	}
 }
 
 
@@ -189,9 +199,9 @@ nav{
 	overflow: hidden;
 	padding: 0;
 	max-width: 1540px;
-	margin: 0 4px 4px;
+	margin: 0;
 	background:#FFF;
-	@include goldenDrop;
+	//@include goldenDrop;
 
 		li {list-style: none;}
 		li > a div {
@@ -288,6 +298,7 @@ footer div{
 	h3{
 			font-family: 'Oswald', sans-serif;
 			font-weight: 300;
+			margin-bottom:10px;
 		}
 
 	.twitter{
@@ -349,6 +360,7 @@ footer div{
 #riseUp{
 	max-width:1450px;
 	margin:-200px auto -40px auto;
+	border-left:1px solid #E2CB6D;
 	padding:2em;
 	background:white;
 	position:relative;
@@ -357,10 +369,16 @@ footer div{
 #riseUpTwo{ //this rise up box has no internal padding
 	max-width:1525px;
 	margin:-200px auto -40px auto;
+	border-left:1px solid #E2CB6D;
 	padding:0;
 	background:white;
 	position:relative;
 	@include goldenDrop;
+
+	.cakeTop{
+		width:90%;
+		margin:-50px auto 0;
+	}
 }
 
 .cakeTop{
@@ -381,7 +399,17 @@ footer div{
 	    z-index: 2;
 	    width:200px;
 	    margin-left:-100px;
-	    margin-top:-144px;
+	    margin-top:-142px;
+	    left:50%;
+	}
+
+	.broachTwo{
+		position: absolute;
+	    top: 0px;
+	    z-index: 2;
+	    width:200px;
+	    margin-left:-100px;
+	    margin-top:-182px;
 	    left:50%;
 	}
 }
@@ -482,9 +510,10 @@ footer div{
 
 	}
 }
-.toolBox{
+.toolBox, .bookShelf{
 	h2{
-		font-size: 1.2em;
+		//font-size: 1.2em;
+		margin-bottom:10px;
 	}
 }
 ul.toolbelt1 li{
@@ -504,6 +533,12 @@ li.tool{
 	line-height:2em;
 	padding-left:10px;
 	font-size: .9em;
+	@include oneBigSec;
+	&:hover{
+		padding-left:14px;
+		cursor: pointer;
+		background:#f2f7fa;
+	}
 	span{
 		font-family: $bitter;
 		color:#666666;
@@ -513,13 +548,26 @@ li.tool{
 	}
 }
 
+.bookShelf{
+	li{
+		float:left;
+		display:inline;
+		margin-right: 12%;
+    	width: 25%;
+	}
+
+	li:last-child{
+		margin-right:0;
+	}
+}
+
 /* Blog Page Styles */ 
 
 .headerBlog{
 	background:$baseBlue url("img/headerBlog.jpg") no-repeat center;
 	background-size: cover ;
 	color:#FFF;
-	min-height: 450px;
+	min-height: 470px;
 }
 
 .blogMeta{
@@ -541,11 +589,18 @@ li.tool{
 }
 
 .blogContainer{
+	margin:0;
+	//margin-top:20px;
 	.sixcol{
 		margin-right:0;
 		width:50%;
 	}
-	margin:0;
+
+	.thinBlog{
+		width:400px;
+		margin:0 auto;
+	}
+	
 	article{
 		float:left;
 		padding: 4%;
@@ -588,11 +643,12 @@ li.tool{
 .blogPost{
 	text-align:center;
 	h2{
-		font-size: 4em;
+		font-size: 3em;
 		font-family: $bitter;
 		text-transform: none;
 		margin:0.5em 0 0;
 		color:#272727;
+		text-align: center;
 	}
 	h3{
 		@include dark-serif;
@@ -605,13 +661,84 @@ li.tool{
 			font-size: .7em;
 		}
 	}
-	time{
-
-	}
+	
 	article{
-		width:80%;
+		width:55%;
+		max-width:750px;
 		margin:2em auto 0;
 		text-align: left;
+
+		blockquote{
+			border-left: 4px solid #E2CB6D;
+			padding-left: 20px;
+			margin-left: 10%;
+			font-style: italic;
+			line-height: 2em;
+		}
+
+		time{
+			text-align: center;
+			width:100%;
+			float:left;
+			margin-bottom:20px;
+		}
+		strong{
+			color:$goldyLocks;
+			font-size: 3.7em;
+			float:left;
+			margin:18px 12px 0 0;
+		}
+	}
+}
+
+.newBlogList{
+	text-align:left;
+	h2{
+		font-size: 2em;
+		font-family: $bitter;
+		text-transform: none;
+		margin:0.5em 0 0;
+		color:#272727;
+		text-align: left;
+		@include oneSec;
+		&:hover{color:#E2CB6D;}
+	}
+	h3{
+		@include dark-serif;
+		font-size: 1.4em;
+		span{
+			font-family: $bitter;
+			color:#666666;
+			text-transform: capitalize;
+			font-style: italic;
+			font-size: .7em;
+		}
+	}
+	
+	article{
+		width:100%;
+		max-width:750px;
+		margin:2em auto 0;
+		padding-bottom:2.4em;
+		text-align: left;
+		border-bottom:1px solid #D9DCE7;
+
+		p{
+			margin:10px 0;
+		}
+
+		blockquote{
+			border-left: 4px solid #E2CB6D;
+			padding-left: 20px;
+			margin-left: 10%;
+			font-style: italic;
+			line-height: 2em;
+		}
+
+		time{
+			text-align: left;
+			color: darken($quickSilver, 15%) ;
+		}
 		strong{
 			color:$goldyLocks;
 			font-size: 3.7em;
@@ -652,7 +779,7 @@ li.tool{
 		margin:30px 0 10px 0;
 	}
 	article{
-		width:80%;
+		//width:80%;
 		margin:2em auto 0;
 		text-align: left;
 		border-bottom:1px solid $quickSilver;
@@ -735,9 +862,7 @@ li.tool{
 			padding-top:40px;
 		}
 	}
-	// img{
-	// 	border: 1px solid $quickSilver;
-	// }
+
 	.logo{
 		text-align:center;
 		img{
@@ -745,6 +870,15 @@ li.tool{
 			height:auto;
 			border:none;
 			margin-bottom:20px;
+		}
+
+		a{
+			border:1px solid $goldyLocks;
+			padding:15px;
+
+			&:hover{
+				background:lighten($quickSilver, 12%);
+			}
 		}
 	}
 	.details{
@@ -896,8 +1030,17 @@ Back to top button
 
 
 	
+
+
+
+
+
+
+
+
+
 /* ============================= */
-/* ! Layout for Mid Screens   */
+/* ! Layout for Mid Size Screens   */
 /* ============================= */	
 @media handheld, only screen and (max-width: 1300px) {
 	.downloads{
@@ -918,9 +1061,34 @@ Back to top button
 @media handheld, only screen and (max-width: 767px) {
 
 	body {
+
+		.blogPost article p strong{
+			font-family:$bitter;
+			color:#66666E;
+			font-size: 20px;
+			float:none;
+			margin:0;
+			padding:0;
+		}
 		
 	}
 
+	.newBlogPost img, .newBlogPost article strong{
+		display:none;
+	}
+
+	.newBlogPost h2, .blogPost h2{font-size:1.6em;}
+
+	.blogPost article{width:90%;}
+
+	#riseUp{
+		padding:2em 0.3em;
+	}
+
+	.mainBody p{
+		line-height: 1.9;
+		font-size: 18px;
+	}
 	.blogPost article, .newBlogPost article{
 		text-align:left !important;
 	}
@@ -975,6 +1143,11 @@ Back to top button
 		.broach{
 			margin-top:-170px;
 		}
+		.broachTwo{
+			margin-top:-169px !important; 
+			margin-left:-85px !important;
+			width:170px !important;
+		}
 	}
 	.slidingDiv {
 		margin:-4px 4px 0 0;
@@ -990,20 +1163,12 @@ Back to top button
 
 @media handheld, only screen and (max-width: 580px) {
 	nav span{display:none;}
+
+	.headerHome h2 span{ display:none;}
 	
 }
 
 @media handheld, only screen and (max-width: 500px) {
-
-	body {}
-
-	.newBlogPost{
-		h2{
-			font-size:1.8em;
-		}
-
-
-	}
 
 	nav{
 
@@ -1023,16 +1188,13 @@ Back to top button
 		}
 	}
 
-	.blogPost h2{
-		font-size: 2.6em;
-	}	
 
 	.container_blue{
-		min-height: 400px;
+		min-height: 360px;
 		h2{
-		font-size: 1.8em;
+		font-size: 1.4em;
 		line-height:1.3em;
-		padding:45px 0 0;
+		padding:40px 0;
 		}	
 	}
 
@@ -1041,6 +1203,9 @@ Back to top button
 	}
 	.container_blue.headerWork {
 		min-height: 400px;
+	}
+	.container_blue.headerBlog {
+		min-height: 470px;
 	}
 
 	.headerHome h2 span{display:none;}
