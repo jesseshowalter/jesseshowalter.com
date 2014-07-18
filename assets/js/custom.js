@@ -5,6 +5,7 @@
 //@codekit-prepend "instafeed.min.js"
 
 
+
 jQuery(function ($) {
   var target = $('#target');
 
