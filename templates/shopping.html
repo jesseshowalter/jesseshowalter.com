@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Jesse Showalter UI/UX - Shopping Cart</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="keywords" content="Hawaiian Airlines, Jesse Showalter, Designer, Developer, UI, UX, Jesse Showalter Designs, Web Design, Graphic Design, Branding, Logo, Interface Design, User Experience Design, Front-End Development">
+	<meta name="description" content="Jesse Showalter is a Designer and front end developer specilizing in web user interfaces and user experiences. He designs, he codes, and is available for work.">
+	<meta http-equiv="Content-Language" content="EN">
+	<meta name="author" content="Jesse Showalter">
+	<meta name="copyright" content="Copyright Jesse Showalter">
+	<meta name="robots" content="follow,index">
+	
+	<!-- 1140px Grid styles for IE -->
+	<!--[if lte IE 9]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" /><![endif]-->
+	
+	<!-- Your styles -->
+	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700|Bitter:400,400italic,700' rel='stylesheet' type='text/css'><link type="text/css" href="css/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/shop.css" type="text/css" media="screen" />
+</head>
+
+<body>
+<div class="container container_blue headerWork">
+	<div class="row">
+		<div class="twelvecol">
+			<nav>
+				<a class="brand" href="index.html"><h1>Jesse Showalter</h1></a>
+				<span>Jesse Showalter - EST.1984</span>
+				<ul>
+					<li><a href="about.html">Info</a></li>
+					<li><a href="articles/index.html">Articles</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<!-- <li><a href="#go" class="show_hide"></a></li> -->
+				</ul>
+			</nav>
+			<h2>A Shopping Cart for Fullsail</h2>
+		</div>
+	</div>
+</div>
+<div class="container mainBody project">
+	<div id="riseUp">
+		<!-- <a class="arrow prev" href="#"><span>Hawaii Theatre</span></a>
+		<a class="arrow next" href="#"><span>Sasquatch Shades</span></a> -->
+		<div class="row details">
+			<div class="ninecol logo">
+				<div id="contentwrap" class=" cf">
+		
+			<h1>Showalter Merchandise</h1>
+
+			<p>Welcome to my awesome store. Drag products that you like from this listing into your cart on the right, and click checkout when you're done!</p>
+			<p>All of our t-shirts are not only 100% awesome, but also 100% pure cotton!</p>
+				
+				
+			<div class="productitem cf" rel="0001">
+				<div class="photo"><img src="products/shirt1.jpeg" /></div>
+				<div class="info">
+					<div class="price">
+						<span class="listprice">$12.99</span>
+					</div>
+					<h4>Hammer Shirt</h4>
+					<p class="kind">T-Shirt</p>
+					<p class="productid">#0001</p>
+					<p class="description">Flaunt your love for "For Today" with this black on white hammer graphic tee.</p>
+					<p class="description">Small Fit</p>
+				</div>
+			</div>
+			
+			<div class="productitem cf" rel="0002">
+				<div class="photo"><img src="products/shirt5.jpeg" /></div>
+				<div class="info">
+					<div class="price">
+						<span class="listprice">$17.99</span>
+					</div>
+					<h4>For Today Candle Shirt</h4>
+					<p class="kind">T-Shirt</p>
+					<p class="productid">#0002</p>
+					<p class="description">Express your pasison for the band with this color graphic tee.</p>
+					<p class="description">Standard fit</p>
+				</div>
+			</div>
+			
+			<div class="productitem cf" rel="0003">
+				<div class="photo"><img src="products/shirt2.jpeg" /></div>
+				<div class="info">
+					<div class="price">
+						<span class="listprice">$21.99</span>
+					</div>
+					<h4>Basic T Shirt</h4>
+					<p class="kind">T-Shirt</p>
+					<p class="productid">#0003</p>
+					<p class="description">Running this shirt's method will automatically send a thank you email to your clients after email submission.</p>
+					<p class="description">Standard fit</p>
+				</div>
+			</div>
+			
+			<div class="productitem cf" rel="0004">
+				<div class="photo"><img src="products/shirt3.jpeg" /></div>
+				<div class="info">
+					<div class="price">
+						<span class="listprice">$19.99</span>
+					</div>
+					<h4>Grey Spartan helmet</h4>
+					<p class="kind">T-Shirt</p>
+					<p class="productid">#0004</p>
+					<p class="description">A black outline of a sparten and swords on a heather grey t-shirt.</p>
+					<p class="description">Standard fit</p>
+				</div>
+			</div>
+			
+			<div class="productitem cf" rel="0005">
+				<div class="photo"><img src="products/shirt4.jpeg" /></div>
+				<div class="info">
+					<div class="price">
+						<span class="listprice">$18.99</span>
+					</div>
+					<h4>Crest</h4>
+					<p class="kind">T-Shirt</p>
+					<p class="productid">#0005</p>
+					<p class="description">Simple crest for the band made of rope, chain, and sweet black dye</p>
+					<p class="description">Tank Top fit</p>
+				</div>
+			</div>
+		
+		</div> <!-- /contentwrap -->
+			</div>
+			<div class="threecol last">
+				<div id="cart-wrap">
+			<div id="cartfollow" style="height:0px; width:260px; float:right;"></div>
+			
+			<div class="sidepanel round lshadow" id="scart">
+				<h3 class="sidehead">Your Shopping Cart</h3>
+				<p>Explore this store dedicated to "For Today" merch!</p>
+				<div class="cartdropbox">Drop Items Here</div>
+				<div class="cartitems cf">
+				
+					<!-- =======================
+						.emptycart should be removed if the cart is not empty 
+					-->
+					<div class="cartitem cf emptycart" rel="empty">
+						<a href="#"><span class="title">Your cart is currently empty.</span></a>
+					</div>
+					<!-- ======================= -->
+					
+					
+					<!-- =======================
+						.cartitem is an example of what a product's html should look like inside the cart.
+						Each time a product is dropped into the cart, you should build a new div using this html as a template.
+						Use the rel attribute to store the product's ID number.
+					-->
+
+					<!-- ======================= -->
+					
+				</div>
+				<div id="clearcart"><a href="#">Empty your cart</a></div>
+			</div>
+	
+		</div> <!-- /cart-wrap -->
+			</div>
+		</div>
+	</div>
+</div>
+<footer class="container container_blue">
+	<div class="row">
+		<div class="fivecol twitter">
+			<h3>The Twittersphere</h3>
+			<div class="tweet"></div>
+			<a href="#">@jesseatomic</a>
+		</div>
+		<div class="twocol backToTop">
+			back to top
+		</div>
+		<div class="fivecol blogRoll last">
+			<h3>The Rise of HTML5</h3>
+			<p>The introduction of HTML5 started long ago with the incorporation of semantics from the W3C. The web community was in the dark ages...</p>
+			<a href="#">Read this Article</a>
+		</div>
+	</div>
+</footer>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery.jsfollow.js"></script>
+<script type="text/javascript" src="js/site.js"></script>
+<p id="back-top">
+	<a href="#top"><span></span></a>
+</p>
+</body>
+</html>
