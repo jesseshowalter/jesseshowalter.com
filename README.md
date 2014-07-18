@@ -1,4 +1,4 @@
 jesseshowalter.com
 ==================
 
-My new responsive portfolio site
+Code for my portfolio website, site works in MODX but these are the static files.
