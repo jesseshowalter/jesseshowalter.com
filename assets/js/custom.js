@@ -3,7 +3,6 @@
 //@codekit-prepend "jquery.tweet.js"
 //@codekit-prepend "css3-mediaqueries.js"
 //@codekit-prepend "instafeed.min.js"
-//@codekit-prepend "jquery.simplyscroll.min.js"
 
 
 jQuery(function ($) {
@@ -102,7 +101,7 @@ $(document).ready(function(){
 });
 
 
-// for scrolling instagram feed at the bottom of info page
+// for instagram feed at the bottom of info page
 
 var feed = new Instafeed({
 get: 'user',
@@ -115,11 +114,4 @@ limit: '10',
 sortBy: 'most-recent'
 });
 feed.run();
-
-
-(function($) {
-    $(function() {
-        $("#scroller").simplyScroll();
-    });
-})(jQuery);
 

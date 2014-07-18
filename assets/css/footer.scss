@@ -1,0 +1,53 @@
+/* Footer Styles */ 
+@mixin quotes{
+	background-image:url("../css/img/quoteL.png"), url("../css/img/quoteR.png");
+	background-position:5% 5%, 95% 95%;
+	background-repeat: no-repeat, no-repeat;
+}
+footer div{
+	padding:25px 0 25px 0;
+	text-align: center;
+	line-height: 1.4em;
+	position:relative;
+	//margin-top:80px;
+	background:#333333; 
+
+	h3{
+			font-family: 'Oswald', sans-serif;
+			font-weight: 300;
+			margin-bottom:10px;
+		}
+
+	.twitter{
+		text-align: right;
+		@include quotes;
+			a:hover{
+			background:$goldyLocks;
+		}
+
+		li{
+			list-style: none;
+		}
+	}
+
+	.backToTop{
+		background: url("../css/img/logo_white.png") center center no-repeat;
+		text-indent: -9999px;
+		margin-top: 3em;
+
+		a:link{
+			width:64px;
+			height:78px;
+			float:left;
+		}
+	}
+
+	.blogRoll{
+		text-align: left;
+		@include quotes;
+		
+		a:hover{
+			background:$goldyLocks;
+		}
+	}
+}

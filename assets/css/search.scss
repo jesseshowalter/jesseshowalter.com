@@ -1,0 +1,114 @@
+.flip {
+    cursor: pointer;
+    background:url("../css/img/mag.jpg") no-repeat left center;
+	padding-left:30px;
+	@include oneSec;
+
+		&:hover{
+			color:$goldyLocks;
+			@include oneSec;
+		}
+}
+ 
+div.panel {
+	margin: 0 0 40px;
+    height: auto;
+    background:#FFF;
+    display: none;
+    padding:10px 0;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	clear:both;
+
+    input{
+    	        /* Opera/IE 8+ */
+    	width:90%;
+    	height:50px;
+    	padding:30px 5%;
+    	border:1px dashed #CCC !important;
+    	font-size: 2em;
+    	color:#E2CB6D !important;
+    	margin:20px 0 -11px;
+    	outline:none;
+    	@include oneBigSec;
+    	-moz-box-shadow:    inset 0 0 8px #EEE;
+  		 -webkit-box-shadow: inset 0 0 8px #EEE;
+  		 box-shadow:         inset 0 0 8px #EEE;
+  		 
+
+    	&:active, &:focus{
+    		@include oneBigSec;
+    		background:$goldyLocks;
+    		color:#FFF !important;
+    		border:1px solid #CCC !important;
+    		-moz-box-shadow:    inset 0 0 8px #C0C0C0;
+  		 	-webkit-box-shadow: inset 0 0 8px #C0C0C0;
+  		 	box-shadow:         inset 0 0 8px #C0C0C0;
+    	}
+    }
+    input[type="submit"]{
+    	display:none !important;
+    }
+    label{
+    	display:none;
+    }
+
+    ::-webkit-input-placeholder {
+	   color: #E2CB6D;
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+	   color: #E2CB6D;  
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+	   color: #E2CB6D;  
+	}
+
+	:-ms-input-placeholder {  
+	   color: #E2CB6D;  
+	}
+
+}
+
+.sisea-search-form {
+	margin-bottom: 60px;
+}
+
+
+// Tag styles
+.tagList{
+	float:left;
+	display: inline;
+	margin: 20px 20px 0;
+	list-style: none;
+}
+
+div.letterSeperator{
+	float:left;
+	display:inline;
+	border:1px solid $quickSilver;
+	padding:20px;
+	margin:0;
+	min-height: 200px;
+	width: 33.3333333%;
+	-webkit-box-sizing:border-box;	
+	   -moz-box-sizing:border-box;
+	        box-sizing:border-box;
+
+	    ul{
+	    	margin-left:48px;
+	    }
+
+		li{
+			list-style: none;
+			margin-top:10px;
+		}
+
+		span{
+			font-size: 4em;
+			float: left;
+			margin: -20px 12px 0 0;
+		}
+}
