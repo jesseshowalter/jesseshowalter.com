@@ -1,0 +1,65 @@
+// Color Variables
+$goldyLocks:#E2CB6D;
+$baseBlue:#151E25;
+$quickSilver:#D9D9D9;
+
+// Font Variables 
+$sans-serif: 'Merriweather', serif;;
+$serif: 'Oswald', sans-serif;
+
+
+// Responsive Breakpoint Variables
+
+// How to us the variables
+//		@media #{$break-full} {
+//   		background: red;
+// 		}
+
+$break-full: "handheld, only screen and (max-width: 1300px)";  // 1300
+$break-large: "handheld, only screen and (max-width: 1100px)"; // 1100
+$break-regular: "handheld, only screen and (max-width: 920px)";  // 920
+$break-mid: "handheld, only screen and (max-width: 767px)";  // 767
+$break-small: "handheld, only screen and (max-width: 500px)";  // 500
+
+// Typography Variables
+@mixin dark-serif{
+	color: #272727;
+	font-size: 1em;
+	font-family: $serif;
+	font-weight: 300; 
+	text-transform: uppercase;
+}
+@mixin greyGoose{
+	font-family: $sans-serif;
+	color: #9C9C9C;
+	font-style: italic;
+	font-size: 12px;
+	font-weight: 100;
+}
+@mixin blue-italic{
+	color: #356382;
+	font-family: $serif;
+	font-weight: 500; 
+	text-transform: uppercase;
+	font-size: 1.0em;
+	font-style: italic;
+}
+
+
+// Transition Variables
+@mixin oneSec{
+	-webkit-transition:all 0.1s ease-in-out;
+	   -moz-transition:all 0.1s ease-in-out;
+	        transition:all 0.1s ease-in-out;
+}
+@mixin oneBigSec{
+	-webkit-transition:all 0.3s ease-in-out;
+	   -moz-transition:all 0.3s ease-in-out;
+	        transition:all 0.3s ease-in-out;
+}
+
+@mixin goldenDrop{
+	-webkit-box-shadow:4px 4px 0 $goldyLocks;
+	   -moz-box-shadow:4px 4px 0 $goldyLocks;
+	        box-shadow:4px 4px 0 $goldyLocks;
+}

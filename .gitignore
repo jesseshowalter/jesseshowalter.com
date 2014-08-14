@@ -1,9 +1,6 @@
 .DS_Store
-/backups
-/mockups
-/core
-/connectors
-/manager
-/assets/components
-/assets/uploads
-/assets/css/.sass-cache
+/_backups
+/_mockups
+/node_modules
+/bower_components
+

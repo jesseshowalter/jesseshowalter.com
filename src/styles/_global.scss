@@ -1,0 +1,131 @@
+::selection 	{ background: $goldyLocks; color: white; } /* Safari */ 
+::-moz-selection { background: $goldyLocks;  color: white; } /* Firefox */
+div#preload { display: none; }
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+} 
+.group:after {
+    clear: both;
+}
+.group {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+
+a.brand{
+	text-indent: -9999px;
+	padding:0;
+	margin:8px 0 0 10px;
+	background:url("../img/logo_white.png") no-repeat center;
+	width:48px;
+	height:52px;
+	float:left;
+	margin-left:20px;
+
+	@media #{$break-mid}{
+		margin: 4px;
+		background-size: 65%;
+		margin-left:10px;
+	}
+}
+
+// Basic link styles
+a:link, a:visited{
+	color:$goldyLocks;
+	text-decoration:none;
+	-webkit-transition:all 0.1s linear;
+       -mox-transition:all 0.1s linear;
+			transition:all 0.1s linear;
+}
+a:hover{ color:$baseBlue; }
+a:active{ color:$goldyLocks; }
+
+body {
+	font-family:$sans-serif;
+	background:#FFF;
+	color:$baseBlue;
+	color:$quickSilver;
+	font-size: 20px;
+	font-weight:300;
+}
+
+// Basic type and image styles
+.mainBody{
+	position: relative;
+	p{
+		font-family: $sans-serif;		
+		font-weight: 100;
+		font-size: 18px;
+		color:#666666;
+		line-height:2em;
+		margin:1.4em 0;
+
+		@media #{$break-mid} {
+			line-height: 1.9;
+			font-size: 17px;
+		}
+	}
+	img{
+		width:100%;
+	}
+}
+
+// Container Styles
+.container_blue{
+	background:$baseBlue;
+	padding:0;
+	@media #{$break-small}{
+		min-height: 260px;
+	} 
+	h2{
+		text-align: center;
+		font-size: 2.8em;
+		font-weight: 100;
+		padding:50px 40px;
+		line-height: 1.4em;
+		// margin-top:100px;
+		background:rgba($goldyLocks, 0.7);
+		@media #{$break-small}{
+			font-size: 1.4em;
+			line-height:1.3em;
+			padding:40px 0;
+		} 
+		a:link, a:visited{
+			color:darken($goldyLocks, 45%);
+		}
+		a:hover{
+			color:darken($goldyLocks, 60%);
+		}
+	}
+}
+.container_grey{
+	background:#222;
+}
+.wrapper{
+	background:#FFF;
+	position: relative;
+	z-index:1;
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  margin-bottom:200px;
+  height: 0;
+}
+.videoWrapper iframe {
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+	height: 100%;
+}
+
+// Disqus Styles
+div#disqus_thread{
+	border-top: 5px solid #E2CB6D !important;
+	padding-top: 40px !important;
+}

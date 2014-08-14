@@ -1,0 +1,161 @@
+/* Footer Styles */ 
+@mixin quotes{
+	background-image:url("../img/quoteL.png"), url("../img/quoteR.png");
+	background-position:5% 5%, 95% 95%;
+	background-repeat: no-repeat, no-repeat;
+}
+
+footer div{
+	padding:25px 0 25px 0;
+	text-align: center;
+	line-height: 1.4em;
+	position:relative;
+
+	h3{
+			font-family: 'Oswald', sans-serif;
+			font-weight: 300;
+			margin-bottom:10px;
+		}
+
+	.twitter{
+		text-align: right;
+		@include quotes;
+			a:hover{
+			background:$goldyLocks;
+		}
+
+		li{
+			list-style: none;
+		}
+	}
+
+	.backToTop{
+		background: url("../img/logo_white.png") center center no-repeat;
+		text-indent: -9999px;
+		margin-top: 3em;
+
+		a:link{
+			width:64px;
+			height:78px;
+			float:left;
+		}
+	}
+
+	.blogRoll{
+		text-align: left;
+		@include quotes;
+		
+		a:hover{
+			background:$goldyLocks;
+		}
+	}
+}
+
+/* Instagram Styles */ 
+#instafeed li{
+	list-style: none;
+	display:inline;
+}
+#instafeed a{
+	float:left;
+	display: inline;
+	width:10%;
+	margin-bottom:-4px;
+}
+
+#instafeed a:hover {
+	opacity: 0.7;
+}
+
+
+/* Twitter Styles */ 
+.tweet, .query {
+	color: #FFF;
+	text-align:right;
+	margin-top:-25px;
+	margin-bottom:-20px;
+	z-index:100;
+}
+
+.tweet_list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow-y: hidden;
+	background-color: transparent;
+}
+	
+.tweet_list li {
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding: 0;
+	list-style-type: none;
+}
+		
+.tweet_list li a {
+	color: $goldyLocks;
+}
+			
+.tweet_list .tweet_avatar {
+	display: none;
+}
+
+.twitter li{
+  list-style: none;
+}
+
+
+/*
+Back to top button 
+*/
+#back-top {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+
+	a{
+		width: 40px;
+		display: block;
+		text-align: center;
+		font: 11px/100% Arial, Helvetica, sans-serif;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: #bbb;
+		/* background color transition */
+		-webkit-transition: 1s;
+		-moz-transition: 1s;
+		transition: 1s;
+
+		&:hover {
+			color: #000;
+		}
+	}
+
+	span { /* arrow icon (span tag) */
+		width: 40px;
+		height: 40px;
+		display: block;
+		margin-bottom: 550px;
+		background:#E2CB6D url(../img/up-arrow2.png) no-repeat center center;
+		-webkit-transition: 0.6s;
+		-moz-transition: 0.6s;
+		transition: 0.6s;
+	}
+}
+#back-top a:hover span {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+@media #{$break-mid} {
+	footer div{
+		padding:45px 0 25px 0;
+	}
+	.backToTop{
+		margin-top:-20px !important;
+		margin-bottom:0px !important;
+	}
+	.twitter{
+		margin-top:0px;
+	}
+}

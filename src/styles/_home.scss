@@ -1,0 +1,146 @@
+.headerHome{
+	background:$baseBlue url("../img/headerHomeNew.jpg")  no-repeat center;
+	background-size: cover ;
+	color:#FFF;
+	min-height: 400px;
+	@media #{$break-mid}{
+		min-height: 200px;
+	}
+
+	h2{
+		text-align: center;
+		font-size: 2em;
+		font-weight: 100;
+		padding:20px;
+		line-height: 1.4em;
+		background:rgba($goldyLocks, 0.7);
+		@media #{$break-mid}{
+			font-size: 1.1em;
+			line-height:1.3em;
+			padding:40px 0;
+		} 
+		a:link, a:visited{
+			color:darken($goldyLocks, 45%);
+		}
+		a:hover{
+			color:darken($goldyLocks, 60%);
+		}
+	}
+}
+
+.projects .twelvecol{
+		padding:0;
+	}
+
+/* Portfolio Styles */ 
+.grid {
+	overflow: hidden;
+	padding: 0;
+	max-width: 1540px;
+	margin: 0;
+	background:#FFF;
+	border-left:1px solid #D9D9D9;
+
+		li {list-style: none;}
+		li > a div {
+			border-right:1px solid $quickSilver;
+			border-bottom:1px solid $quickSilver;
+			padding: 3em 1em;
+			text-align: center;
+			@include oneSec;
+
+			img{
+				max-height: 90px;
+				width:auto;
+			}
+		}
+
+	div h2{
+		@include dark-serif;
+		font-weight:300;
+		font-size:16px;;
+		margin-top:10px;
+	}
+	div h3{
+		@include greyGoose;
+		@include oneSec;
+	}
+	div:hover h3{
+		color:white;
+	}
+
+	li a div:hover{
+		background:$goldyLocks;
+		padding: 3.5em 2em 2.5em 2em;
+		}
+	li a > div.omega{
+			border-right:none;
+		}
+	li a {
+		color: #fff;
+	}
+}
+@media #{$break-full} {
+	.grid{
+		border-left:none;
+	}
+}
+@media #{$break-regular} {
+	.grid li a > div{
+		border:none !important;
+	}
+}
+@media #{$break-mid} {
+	.grid li a > div{
+		border:none !important;
+	}
+
+	.grid {
+		-webkit-box-shadow:none;
+	       -moz-box-shadow:none;
+	            box-shadow:none;
+	}
+}
+
+@media all and (min-width: 27em) {
+
+	.grid li {
+		width: 50%;
+		float: left;
+		max-height: 300px;
+	}
+}
+@media all and (min-width: 40em) {
+
+	.grid li {
+		width: 33.3333333%;
+	}
+	.grid li.wide {
+		width: 66.666666%;
+	}
+}
+@media all and (min-width: 60em) {
+	.grid li {
+		width: 33.3%;
+	}
+	.grid li.wide {
+		width: 50%;
+	}
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16/9 ratio */
+    padding-top: 30px; /* IE6 workaround*/
+    height: 0;
+    overflow: hidden;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
